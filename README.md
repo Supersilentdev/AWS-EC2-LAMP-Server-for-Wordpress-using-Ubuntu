@@ -1,5 +1,6 @@
 # AWS-EC2-LAMP-Server-for-Wordpress-using-Ubuntu
 Installing LAMP (Ubuntu Linux, Apache. MySql and PHP) on Ec2 Machine to Deploy Wordpress App.
+For Amazon Linux 2 LAMP Server <a href="https://github.com/Supersilentdev/AWS-EC2-LAMP-Server-for-Wordpress-using-Amazon-Linux-2">click hear</a>.
 
 **Sign Up or Log In to AWS**
 
