@@ -3,7 +3,7 @@ Installing LAMP (Ubuntu Linux, Apache. MySql and PHP) on Ec2 Machine to Deploy W
 
 **Sign Up or Log In to AWS**
 
-   - Create an AWS <a href="aws.amazon.com">free-tier</a> account if you don't already have one. If you do, simply <a href="aws.amazon.com">log in</a> to your existing account.
+   - Create an AWS <a href="https://aws.amazon.com/">free-tier</a> account if you don't already have one. If you do, simply <a href="https://aws.amazon.com">log in</a> to your existing account.
 
 **Setting Up an EC2 Instance**
 
