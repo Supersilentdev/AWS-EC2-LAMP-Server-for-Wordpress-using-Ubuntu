@@ -12,13 +12,13 @@ Installing LAMP (Ubuntu Linux, Apache. MySql and PHP) on Ec2 Machine to Deploy W
 
 **Selecting Region and Availability Zone**
 
-   - Choose the specific AWS Region and Availability Zone according to your project's requirements.
+   - Choose the specific AWS Region according to your project's requirements.
 
 **Instance Configuration**
 
    - Under the "Instances" section, select "Launch Instances."
    - Provide a meaningful name for your instance and optionally, add tags for resource organization.
-   - Select the Amazon Machine Image (AMI), choose "Ubuntu LTS."
+   - Select the Amazon Machine Image (AMI), choose "Ubuntu Server LTS."
    - Choose the instance type based on your server's requirements. (For the AWS free tier, options like "t2.micro" or "t3.micro" are suitable, depending on your region.)
 
 **Key Pair Creation**
@@ -70,10 +70,10 @@ Installing LAMP (Ubuntu Linux, Apache. MySql and PHP) on Ec2 Machine to Deploy W
      ```bash
      chmod 0400 KEYXXX.pem
      ```
-   - Use the following SSH command to access your server (change "KEYXXX.pem" with your KEY and "ec2-3-XXX-XX-235.us-east-1.compute.amazonaws.com" with your server public IP address in the command).
+   - Use the following SSH command to access your server (change "KEYXXX.pem" with your KEY and "3-XXX-XX-235" with your server public IP address in the command).
 
      ```bash
-     ssh -i KEYXXX.pem ubuntu@ec2-3-XXX-XX-235.us-east-1.compute.amazonaws.com
+     ssh -i KEYXXX.pem ubuntu@3-XXX-XX-235
      ```
 
 **Creating a Database for WordPress**
@@ -120,7 +120,7 @@ Installing LAMP (Ubuntu Linux, Apache. MySql and PHP) on Ec2 Machine to Deploy W
      sudo systemctl restart apache2
      ```
 
-Done, Now Access Your Wordpress Installation & Set it up using Server Public IP Address.(Example: http://3-XXX-XX-235)
+Done, Now Access Your Wordpress Installation & Set it up using Server Public IP Address.(Example: http://3-XXX-XX-235 use http not https)
 
 **Installing SSL Certificate for WordPress**
 
