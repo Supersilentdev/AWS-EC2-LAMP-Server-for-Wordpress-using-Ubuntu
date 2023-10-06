@@ -1,9 +1,9 @@
 # AWS-EC2-LAMP-Server-for-Wordpress-using-Ubuntu
-Installing LAMP ( Ubuntu, Apache. MySql and PHP) on Ec2 Machine to Deploy Wordpress App.
+Installing LAMP (Ubuntu Linux, Apache. MySql and PHP) on Ec2 Machine to Deploy Wordpress App.
 
 **Sign Up or Log In to AWS**
 
-   - Create an AWS free-tier account if you don't already have one. If you do, simply log in to your existing account.
+   - Create an AWS <a href="aws.amazon.com">free-tier</a> account if you don't already have one. If you do, simply <a href="aws.amazon.com">log in</a> to your existing account.
 
 **Setting Up an EC2 Instance**
 
@@ -65,12 +65,12 @@ Installing LAMP ( Ubuntu, Apache. MySql and PHP) on Ec2 Machine to Deploy Wordpr
 
    - Locate the private key file associated with your instance, which is typically in the format KEYXXX.pem.
 
-   - Run the following command to secure your private key(change"KEYXXX.pem" with your key in the give below command).
+   - Run the following command to secure your private key(change"KEYXXX.pem" with your key name in the command).
 
      ```bash
      chmod 0400 KEYXXX.pem
      ```
-   - Use the following SSH command to access your server (change "KEYXXX.pem" with your KEY and "ec2-3-XXX-XX-235.us-east-1.compute.amazonaws.com" with your server public IP address in the give below command).
+   - Use the following SSH command to access your server (change "KEYXXX.pem" with your KEY and "ec2-3-XXX-XX-235.us-east-1.compute.amazonaws.com" with your server public IP address in the command).
 
      ```bash
      ssh -i KEYXXX.pem ubuntu@ec2-3-XXX-XX-235.us-east-1.compute.amazonaws.com
@@ -84,7 +84,7 @@ Installing LAMP ( Ubuntu, Apache. MySql and PHP) on Ec2 Machine to Deploy Wordpr
      sudo mysql -u root -p
      ```
 
-   - Replace 'wpuser' and 'wppassword' with a secure username and password:
+   - Replace 'wpuser' and 'wppassword' with a secure username and password in the command:
 
      ```sql
      CREATE DATABASE wordpress;
@@ -120,7 +120,7 @@ Installing LAMP ( Ubuntu, Apache. MySql and PHP) on Ec2 Machine to Deploy Wordpr
      sudo systemctl restart apache2
      ```
 
-Done, Now Access Your Wordpress Installation & Set it up using it's Public IP Address.(Example: http://3-XXX-XX-235)
+Done, Now Access Your Wordpress Installation & Set it up using Server Public IP Address.(Example: http://3-XXX-XX-235)
 
 **Installing SSL Certificate for WordPress**
 
